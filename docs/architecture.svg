@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="840" viewBox="0 0 1400 840" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6B5B7B"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="840" rx="24" fill="#FFFFFF"/>
+
+  <text x="40" y="62" font-size="26" font-weight="700" fill="#2E1A47">vandasweets.com architecture</text>
+  <text x="40" y="90" font-size="15" fill="#6B6475">Static frontend, serverless backend, no long-running servers to maintain</text>
+
+  <!-- clients -->
+  <g>
+    <rect x="40" y="150" width="250" height="320" rx="16" fill="#F4EEFA" stroke="#8C6BB1" stroke-width="2"/>
+    <text x="64" y="188" font-size="19" font-weight="700" fill="#2E1A47">Customer</text>
+    <text x="64" y="214" font-size="15" fill="#4D4458">Phone browser</text>
+    <text x="64" y="238" font-size="15" fill="#4D4458">Arabic, right-to-left UI</text>
+    <text x="64" y="278" font-size="15" fill="#4D4458">Box builder, cart,</text>
+    <text x="64" y="300" font-size="15" fill="#4D4458">guest or signed-in</text>
+    <text x="64" y="322" font-size="15" fill="#4D4458">checkout, order tracking</text>
+
+    <rect x="40" y="500" width="250" height="150" rx="16" fill="#F4EEFA" stroke="#8C6BB1" stroke-width="2"/>
+    <text x="64" y="538" font-size="19" font-weight="700" fill="#2E1A47">Owners</text>
+    <text x="64" y="564" font-size="15" fill="#4D4458">Admin dashboard: orders,</text>
+    <text x="64" y="586" font-size="15" fill="#4D4458">cash ledger, analytics,</text>
+    <text x="64" y="608" font-size="15" fill="#4D4458">shop settings</text>
+  </g>
+
+  <!-- cloudflare -->
+  <g>
+    <rect x="360" y="120" width="310" height="215" rx="18" fill="#FFF5EA" stroke="#F38020" stroke-width="2"/>
+    <text x="380" y="148" font-size="14" font-weight="700" fill="#B85A0E" letter-spacing="1">CLOUDFLARE</text>
+    <rect x="380" y="160" width="270" height="92" rx="12" fill="#FFFFFF" stroke="#F5B57A"/>
+    <text x="398" y="187" font-size="17" font-weight="700" fill="#2E1A47">Pages</text>
+    <text x="398" y="210" font-size="14" fill="#4D4458">Static Next.js 16 export, React 19, TS</text>
+    <text x="398" y="232" font-size="14" fill="#4D4458">CSP and HSTS security headers</text>
+    <rect x="380" y="262" width="270" height="58" rx="12" fill="#FFFFFF" stroke="#F5B57A"/>
+    <text x="398" y="289" font-size="17" font-weight="700" fill="#2E1A47">Turnstile</text>
+    <text x="398" y="309" font-size="14" fill="#4D4458">Bot check before each new order</text>
+  </g>
+
+  <!-- supabase -->
+  <g>
+    <rect x="730" y="120" width="400" height="690" rx="18" fill="#EEF9F3" stroke="#3ECF8E" stroke-width="2"/>
+    <text x="750" y="148" font-size="14" font-weight="700" fill="#1F8A5B" letter-spacing="1">SUPABASE</text>
+
+    <rect x="750" y="160" width="360" height="120" rx="12" fill="#FFFFFF" stroke="#9FDDBF"/>
+    <text x="768" y="188" font-size="17" font-weight="700" fill="#2E1A47">Auth</text>
+    <text x="768" y="212" font-size="14" fill="#4D4458">Customers: Google or email and password</text>
+    <text x="768" y="234" font-size="14" fill="#4D4458">Admin: passkeys (WebAuthn) on an allowlist,</text>
+    <text x="768" y="256" font-size="14" fill="#4D4458">checked again on every admin request</text>
+
+    <rect x="750" y="330" width="360" height="200" rx="12" fill="#FFFFFF" stroke="#9FDDBF"/>
+    <text x="768" y="358" font-size="17" font-weight="700" fill="#2E1A47">Edge Functions (Deno, TypeScript)</text>
+    <text x="768" y="386" font-size="14" font-weight="600" fill="#2E1A47">orders</text>
+    <text x="768" y="406" font-size="14" fill="#4D4458">validates every box against the catalog,</text>
+    <text x="768" y="426" font-size="14" fill="#4D4458">prices on the server, idempotent retries</text>
+    <text x="768" y="454" font-size="14" font-weight="600" fill="#2E1A47">order-notifications</text>
+    <text x="768" y="474" font-size="14" fill="#4D4458">email queue worker</text>
+    <text x="768" y="502" font-size="14" font-weight="600" fill="#2E1A47">finance-sync</text>
+    <text x="768" y="520" font-size="14" fill="#4D4458">cash ledger export</text>
+
+    <rect x="750" y="580" width="360" height="210" rx="12" fill="#FFFFFF" stroke="#9FDDBF"/>
+    <text x="768" y="608" font-size="17" font-weight="700" fill="#2E1A47">PostgreSQL</text>
+    <text x="768" y="634" font-size="14" fill="#4D4458">44 versioned migrations</text>
+    <text x="768" y="656" font-size="14" fill="#4D4458">RLS on every table, no browser grants</text>
+    <text x="768" y="678" font-size="14" fill="#4D4458">RPCs callable by the service role only</text>
+    <text x="768" y="700" font-size="14" fill="#4D4458">Shared token-bucket rate limits</text>
+    <text x="768" y="722" font-size="14" fill="#4D4458">Atomic order and status transactions</text>
+    <text x="768" y="744" font-size="14" fill="#4D4458">pg_cron: notifications, finance sync,</text>
+    <text x="768" y="766" font-size="14" fill="#4D4458">health check, data cleanup</text>
+  </g>
+
+  <!-- external -->
+  <g>
+    <rect x="1180" y="330" width="190" height="86" rx="14" fill="#F6F6F8" stroke="#B9B6C2" stroke-width="1.5"/>
+    <text x="1198" y="364" font-size="17" font-weight="700" fill="#2E1A47">Resend</text>
+    <text x="1198" y="388" font-size="14" fill="#4D4458">Order and sign-up</text>
+    <text x="1198" y="406" font-size="14" fill="#4D4458">emails to owners</text>
+
+    <rect x="1180" y="444" width="190" height="86" rx="14" fill="#F6F6F8" stroke="#B9B6C2" stroke-width="1.5"/>
+    <text x="1198" y="478" font-size="17" font-weight="700" fill="#2E1A47">Google Sheets</text>
+    <text x="1198" y="502" font-size="14" fill="#4D4458">Owners' finance</text>
+    <text x="1198" y="520" font-size="14" fill="#4D4458">spreadsheet</text>
+
+    <rect x="1180" y="640" width="190" height="150" rx="14" fill="#F6F6F8" stroke="#B9B6C2" stroke-width="1.5"/>
+    <text x="1198" y="674" font-size="17" font-weight="700" fill="#2E1A47">GitHub Actions</text>
+    <text x="1198" y="698" font-size="14" fill="#4D4458">On every pull request:</text>
+    <text x="1198" y="720" font-size="14" fill="#4D4458">lint, type-check,</text>
+    <text x="1198" y="742" font-size="14" fill="#4D4458">356 unit tests,</text>
+    <text x="1198" y="764" font-size="14" fill="#4D4458">production build</text>
+  </g>
+
+  <!-- arrows -->
+  <g stroke="#6B5B7B" stroke-width="2" fill="none" marker-end="url(#a)">
+    <path d="M290 205H378"/>
+    <path d="M290 291H378"/>
+    <path d="M290 430H748"/>
+    <path d="M290 515H748"/>
+    <path d="M748 372H705V306H652"/>
+    <path d="M930 328V282"/>
+    <path d="M900 532V578"/>
+    <path d="M960 578V532"/>
+    <path d="M1110 373H1178"/>
+    <path d="M1110 487H1178"/>
+  </g>
+  <g font-size="13" fill="#6B5B7B">
+    <text x="296" y="196">loads</text>
+    <text x="296" y="282">token</text>
+    <text x="420" y="421">HTTPS JSON order + Turnstile token</text>
+    <text x="420" y="506">admin API, passkey session required</text>
+    <text x="708" y="352" text-anchor="end">verify</text>
+    <text x="940" y="309">verify user</text>
+    <text x="830" y="560" text-anchor="middle">RPC</text>
+    <text x="1030" y="560" text-anchor="middle">pg_cron jobs</text>
+  </g>
+</svg>
