@@ -48,7 +48,7 @@ Taken on an iPhone 18 Pro Max (iOS Simulator) from the live site.
 
 - **Frontend:** Next.js 16 and React 19 in TypeScript, exported as a static site and served by Cloudflare Pages with strict security headers (CSP, HSTS).
 - **Backend:** Supabase. Three Edge Functions (Deno, TypeScript) hold all business logic: `orders` (checkout, accounts, admin API), `order-notifications` (email queue worker) and `finance-sync`.
-- **Database:** PostgreSQL, evolved through 44 versioned migrations. Scheduled jobs run with `pg_cron`.
+- **Database:** PostgreSQL, evolved through 58 versioned migrations. Scheduled jobs run with `pg_cron`.
 - **No servers to babysit:** everything is static hosting or serverless, which keeps a small business's running costs close to zero.
 
 ## Engineering highlights
