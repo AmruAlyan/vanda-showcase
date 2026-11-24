@@ -106,7 +106,7 @@ Admin routes check, on every request, a confirmed email on an allowlist and a se
 
 ### Tested and reviewed before it ships
 
-- 356 unit tests, run with lint, type-checking and a production build by GitHub Actions on every pull request
+- 550+ automated tests, run with lint, type-checking and a production build by GitHub Actions on every pull request
 - Load, stress, spike and soak tests before launch
 - Every change goes through a pull request and a preview deployment, then the owners approve it before production
 
